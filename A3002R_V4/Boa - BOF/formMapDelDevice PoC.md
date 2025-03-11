@@ -4,17 +4,21 @@
 
 **Contributor :** Lee Jong Hoon, Yang In Gyu, Jeong Yun Ho, Park Seong Ho, Lim Chan Su
 
-**Date** : 
+**Date** : 2025/03/03
 
-**Testing Environment** : 
+**Testing Environment** : Ubuntu 22.04 LTS
 
 ## Vulnerability Info
 
 ### Firmware Version
+• TOTOLINK A3002R V4
+• TOTOLINK-A3002R-Ge-V4.0.0-B20230531.1404.web
 
 ### Vulnerability Type
+• Buffer overflow
 
 ### 1-Line Description
+• TOTOLINK A3002RV4 has a buffer overflow vulnerability due to insufficient parameter processing at formMapDelDevice endpoint.
 
 ---
 
