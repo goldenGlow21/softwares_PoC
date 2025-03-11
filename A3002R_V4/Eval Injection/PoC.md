@@ -47,11 +47,14 @@ Eval Injection
 
 ## Vulnerability Verification
 
-(취약점 exploit 내용)
-
+### crack
 <img width="760" alt="image" src="https://github.com/user-attachments/assets/1789a1fb-073b-4ac5-98ed-6cf8029934f8" />
 
+When confirmed with the developer tool, it was confirmed that the value was treated as hidden in the sessionCheck field
+
 <img width="764" alt="image" src="https://github.com/user-attachments/assets/49979621-7b94-42be-aec0-b0a3fc69369a" />
+
+refer to attack to get a value from the sessioncheck field
 
 ---
 
@@ -59,7 +62,7 @@ Eval Injection
 
 <img width="490" alt="image" src="https://github.com/user-attachments/assets/754d8242-979b-4fe5-b24c-8799738ae655" />
 
-XSS vulnerability was successful through the eval() Injection,
+Successful exploitation of sessionid when accessing page, XSS vulnerability succeeded through eval() function
 <br>
 In addition, eval() was possible on a total of 7 pages.
 <br>
