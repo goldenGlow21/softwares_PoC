@@ -23,7 +23,7 @@
 (취약점 발견까지의 과정 및 조사 내용)
 
 <img width="695" alt="image" src="https://github.com/user-attachments/assets/8049780a-dfe4-49ec-a674-185093a55760" />
-
+While operating the emulator for the firmware and analyzing server vulnerabilities, I found that the shadow, shadow.sample file was using the MD5 hash algorithm
 
 
 ---
@@ -33,7 +33,9 @@
 (취약점 exploit 내용)
 
 ![telnet](https://github.com/user-attachments/assets/dca6f395-d7a0-4228-a586-d02b0f66ad6d)
+Copy all contents of the shadow.sample file
 ![ㅋ1](https://github.com/user-attachments/assets/aadbf590-93b4-41ce-a654-d345b82b4876)
+
 ![tel](https://github.com/user-attachments/assets/1babdd14-d435-42e4-b639-63df27eb83cb)
 
 ---
