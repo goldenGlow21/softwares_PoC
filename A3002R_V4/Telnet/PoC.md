@@ -43,13 +43,14 @@ refer to /etc/initab in busybox
 [FUN_004436f0]
 /etc/initab called etc/init.d/rcS
 
-![ㅣ4](https://github.com/user-attachments/assets/3d64d6d5-2416-4257-841c-ff504769c62e)
+![1541](https://github.com/user-attachments/assets/ad8939b2-3d49-4cc3-bc14-667be1c596d8)
 
-/etc/init.d/rcS calls init.sh (gwall)
+/etc/init.d/rcS calls init.sh (gw all)
+gw all: gateway all
 
 ![123123](https://github.com/user-attachments/assets/1d0b2ad1-45cb-43e0-bb57-0ebbecff49a6)
 
-I analyzed init.sh through Ghidra And while I were further analyzing the FUN_00404d98 function
+I analyzed init.sh And while I were further analyzing the FUN_00404d98 function
 
 ![1231234](https://github.com/user-attachments/assets/a270e58b-1d68-406f-8e71-cfd238bc6694)
 
