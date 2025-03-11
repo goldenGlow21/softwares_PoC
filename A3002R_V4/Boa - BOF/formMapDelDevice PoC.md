@@ -12,6 +12,7 @@
 
 ### Firmware Version
 • TOTOLINK A3002R V4
+
 • TOTOLINK-A3002R-Ge-V4.0.0-B20230531.1404.web
 
 ### Vulnerability Type
