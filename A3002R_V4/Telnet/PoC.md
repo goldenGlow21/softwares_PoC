@@ -21,12 +21,17 @@
 ## Vulnerability Acquirement
 
 (취약점 발견까지의 과정 및 조사 내용)
+<img width="695" alt="image" src="https://github.com/user-attachments/assets/8049780a-dfe4-49ec-a674-185093a55760" />
+![tel](https://github.com/user-attachments/assets/1babdd14-d435-42e4-b639-63df27eb83cb)
+![ㅋ1](https://github.com/user-attachments/assets/aadbf590-93b4-41ce-a654-d345b82b4876)
+
 
 ---
 
 ## Vulnerability Verification
 
 (취약점 exploit 내용)
+![ㅋ2](https://github.com/user-attachments/assets/cfc807a4-b302-46de-a7e1-82aaa49a950a)
 
 ---
 
