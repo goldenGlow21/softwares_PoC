@@ -66,4 +66,4 @@ Upon checking the stack with gdb-multiarch, it was confirmed that the buffer ove
 
 https://github.com/user-attachments/assets/ca256038-f7fe-4710-99f1-c1d50c71b739
 
-
+The video's `python3 ex.py` should be changed to `python3 formPortFw PoC.py`.
