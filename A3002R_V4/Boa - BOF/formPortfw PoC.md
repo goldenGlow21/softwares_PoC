@@ -25,7 +25,7 @@
 ## Vulnerability Acquirement
 ![스크린샷 2025-03-07 150410](https://github.com/user-attachments/assets/2e551d6c-b626-43dc-9696-7d1ae2a6a7c3)
 
-Identify the use of sprintf to receive ip_subnet and fw_ip as inputs and store the result in a string variable without displaying the output.
+Identify the use of sprintf to receive ip_subnet and fw_ip as inputs and store the result in a string variable without displaying the output.(in ghidra formPortfw/FUN_00416588)
 
 
 ---
