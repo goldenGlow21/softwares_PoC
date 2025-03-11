@@ -36,6 +36,6 @@
 
 ## Video
 
+https://github.com/user-attachments/assets/994b56d0-48d0-4012-abcc-376f2b86998c
 
-
-The video's `python3 ex.py` should be changed to `python3 formPortFw PoC.py`.
+The video's `python3 ex.py` should be changed to `python3 formDelDevicePoC.py`.
