@@ -32,6 +32,7 @@
 
 (취약점 exploit 내용)
 
+![telnet](https://github.com/user-attachments/assets/dca6f395-d7a0-4228-a586-d02b0f66ad6d)
 ![tel](https://github.com/user-attachments/assets/1babdd14-d435-42e4-b639-63df27eb83cb)
 ![ㅋ1](https://github.com/user-attachments/assets/aadbf590-93b4-41ce-a654-d345b82b4876)
 
