@@ -1,4 +1,4 @@
-# Proof of Concept for: **Totolink A3002R V4_Firmware V4.0.0-B20230531.1404**
+<img width="729" alt="스크린샷 2025-03-11 오후 12 34 22" src="https://github.com/user-attachments/assets/27d415d4-cbe7-4929-9c87-4cfe78f27977" /># Proof of Concept for: **Totolink A3002R V4_Firmware V4.0.0-B20230531.1404**
 
 ---
 
@@ -26,13 +26,18 @@
 
 While operating the emulator for the firmware and analyzing server vulnerabilities, I found that the shadow, shadow.sample file was using the MD5 hash algorithm
 
+<img width="729" alt="스크린샷 2025-03-11 오후 12 34 22" src="https://github.com/user-attachments/assets/7ed18022-22db-43e2-9dfd-f223542f398a" />
+
+
+
 ![123123](https://github.com/user-attachments/assets/1d0b2ad1-45cb-43e0-bb57-0ebbecff49a6)
 
-I analyzed init.sh through Ghidra
+I analyzed init.sh through Ghidra And while I were further analyzing the FUN_00404d98 function
 
 ![1231234](https://github.com/user-attachments/assets/a270e58b-1d68-406f-8e71-cfd238bc6694)
 
-
+I identified telnetd, the denon of telnet, in the function FUN_00404d98.
+So I thought I should Telnet access through the information on the shadow or shadow.sample.
 
 ---
 
@@ -61,4 +66,4 @@ As previously analyzed, we identified that Telnet is operating and performed a p
 
 ![ㅋ2](https://github.com/user-attachments/assets/cfc807a4-b302-46de-a7e1-82aaa49a950a)
 
-Connection successful
+Connection successful!!
