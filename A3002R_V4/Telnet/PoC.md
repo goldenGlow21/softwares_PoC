@@ -26,12 +26,22 @@
 
 While operating the emulator for the firmware and analyzing server vulnerabilities, I found that the shadow, shadow.sample file was using the MD5 hash algorithm
 
+![123123](https://github.com/user-attachments/assets/1d0b2ad1-45cb-43e0-bb57-0ebbecff49a6)
+
+I analyzed init.sh through Ghidra
+
+![1231234](https://github.com/user-attachments/assets/a270e58b-1d68-406f-8e71-cfd238bc6694)
+
+
 
 ---
 
 ## Vulnerability Verification
 
 (취약점 exploit 내용)
+
+
+
 
 ![telnet](https://github.com/user-attachments/assets/dca6f395-d7a0-4228-a586-d02b0f66ad6d)
 
