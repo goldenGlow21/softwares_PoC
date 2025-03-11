@@ -40,12 +40,12 @@ refer to /etc/initab in busybox
 
 ![ㅣ3](https://github.com/user-attachments/assets/b303741b-0be4-40fa-885f-32bba2148dfb)
 
-[FUN_004436f0]
-/etc/initab called etc/init.d/rcS
+/etc/initab called etc/init.d/rcS in the function FUN_004436f0
 
 ![1541](https://github.com/user-attachments/assets/ad8939b2-3d49-4cc3-bc14-667be1c596d8)
 
 /etc/init.d/rcS calls init.sh (gw all)
+<br>
 gw all: gateway all
 
 ![123123](https://github.com/user-attachments/assets/1d0b2ad1-45cb-43e0-bb57-0ebbecff49a6)
