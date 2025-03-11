@@ -23,6 +23,7 @@ Eval Injection
 
 ## Vulnerability Acquirement
 
+### Shell Analysis
 <img width="715" alt="image" src="https://github.com/user-attachments/assets/a266d47c-a948-46b9-9239-f058d7369ad9" />
 
 
@@ -34,7 +35,7 @@ Eval Injection
 <img width="813" alt="image" src="https://github.com/user-attachments/assets/d7dede8a-4003-4f12-a2d6-d268c3220725" />
 
 
-
+### 
 <img width="792" alt="image" src="https://github.com/user-attachments/assets/8b90d832-4e34-4976-9992-2f9bbe331839" />
 
 
@@ -58,5 +59,9 @@ Eval Injection
 
 <img width="490" alt="image" src="https://github.com/user-attachments/assets/754d8242-979b-4fe5-b24c-8799738ae655" />
 
-XSS vulnerability was successful through the eval() function
+XSS vulnerability was successful through the eval() Injection,
+<br>
+In addition, eval() was possible on a total of 7 pages.
+<br>
+: title.htm, wlstatbl.htm, moblie/wizard.asp, portfw.htm, arptbl.htm, reboot.htm, saveconf.htm
 
