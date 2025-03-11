@@ -25,7 +25,7 @@
 ## Vulnerability Acquirement
 ![스크린샷 2025-03-07 150410](https://github.com/user-attachments/assets/2e551d6c-b626-43dc-9696-7d1ae2a6a7c3)
 
-Identify the use of sprintf to receive ip_subnet and fw_ip as inputs and store the result in a string variable without displaying the output.(in ghidra formPortFw/FUN_00416588)
+Identified the use of sprintf function on the script, which receives ip_subnet and fw_ip value from user input. It stores the result in a string variable.(c.f. ghidra - formPortFw/FUN_00416588))
 
 
 ---
@@ -59,3 +59,11 @@ target remote 192.168.0.1:1337
 ```
 
 Upon checking the stack with gdb-multiarch, it was confirmed that the buffer overflow occurred as the stack was filled with numerous "aaaaaa...". Consequently, the Boa web server was terminated, making the website inaccessible.
+
+---
+
+## Video
+
+https://github.com/user-attachments/assets/ca256038-f7fe-4710-99f1-c1d50c71b739
+
+
