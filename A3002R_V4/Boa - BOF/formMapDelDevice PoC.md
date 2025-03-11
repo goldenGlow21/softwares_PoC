@@ -20,7 +20,8 @@
 
 ## Vulnerability Acquirement
 
-![image.png](attachment:63d42f52-28e4-4beb-baee-14b4502e87d2:image.png)
+![1](https://github.com/user-attachments/assets/a4087303-a058-4b4a-922b-fb85fd4a1f8b)
+
 
 TOTOLINK-A3002R-Ge-V4.0.0-B20230531.1404 펌웨어에는 `0x45a1f8` 함수에 버퍼 오버플로우 취약점이 있습니다. `param_1`은 hostname 파라미터에서  입력을 받습니다.  해당 파라미터의 엔드포인트는 “formMapDelDevice”이며 multi_ap_popup_client_details.htm URl에서 동작합니다. 
 
@@ -28,18 +29,21 @@ TOTOLINK-A3002R-Ge-V4.0.0-B20230531.1404 펌웨어에는 `0x45a1f8` 함수에 �
 
 ## Vulnerability Verification
 
-![image.png](attachment:ece1325f-3567-409d-a7ce-492dcab2267b:image.png)
+![2](https://github.com/user-attachments/assets/a1d6c427-468d-415c-8f26-52a5d6b31d08)
 
 POST 요청을 위해 해당 파라미터를 전송하는 `multi_ap_popup_client_details.htm` 에 접속하여 전송버튼을 개발자 도구로 비활성화 합니다.
 
-![image.png](attachment:7cf346e8-7aa8-428e-80d0-5fdbd3d32293:image.png)
+![3](https://github.com/user-attachments/assets/c7d45c05-3386-46d4-a7c5-9942d7b4a4b5)
+
 display : none; 비활성화
 
 
-![image.png](attachment:f3046b65-a97b-4b56-b3e1-998393a2e77b:image.png)
+![4](https://github.com/user-attachments/assets/91468c7c-6e89-4b46-a29d-03fb144b2da7)
+
 hostname 파라미터를 전송하는 입력창이 나옵니다.
 
-![image.png](attachment:15ce3d61-ed0e-4322-8d19-fee97266c5b2:image.png)
+![5](https://github.com/user-attachments/assets/ec9c971b-d827-4d41-8df0-1bd8aaf6d44b)
+
 해당 창에 임의의 값을 입력하면 hostname 파라미터에 값이 들어가는 것을 확인
 
 
@@ -47,10 +51,12 @@ hostname 파라미터를 전송하는 입력창이 나옵니다.
 
 ## Result
 
-![image.png](attachment:94498d76-0341-4d29-a70b-7a27bd1824bc:image.png)
+![6](https://github.com/user-attachments/assets/936e28a5-bbe9-415f-9d95-8fbcbe3b7f53)
+
 hostname 파라미터에 오버플로우가 일어날 만큼의 많은 “a”를 집어 넣으면 boa 웹 서버가 강제로 종료되며 웹 서비스를 이용할 수 없습니다.
 
-![image.png](attachment:ef505756-785b-4c3f-9a58-f34f15690999:image.png)
+![7](https://github.com/user-attachments/assets/c1ee60a1-600a-4ffa-9fa9-531dbf497125)
+
 Boa 웹 서버가 종료되어 웹 인터페이스에 접근할 수 없는 것을 확인할 수 있습니다.
 
 
