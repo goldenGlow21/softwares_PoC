@@ -1,4 +1,4 @@
-<img width="729" alt="스크린샷 2025-03-11 오후 12 34 22" src="https://github.com/user-attachments/assets/27d415d4-cbe7-4929-9c87-4cfe78f27977" /># Proof of Concept for: **Totolink A3002R V4_Firmware V4.0.0-B20230531.1404**
+# Proof of Concept for: **Totolink A3002R V4_Firmware V4.0.0-B20230531.1404**
 
 ---
 
@@ -28,7 +28,24 @@ While operating the emulator for the firmware and analyzing server vulnerabiliti
 
 <img width="729" alt="스크린샷 2025-03-11 오후 12 34 22" src="https://github.com/user-attachments/assets/7ed18022-22db-43e2-9dfd-f223542f398a" />
 
+Telnetd found in /bin directory, but further investigation required
 
+![ㅣ1](https://github.com/user-attachments/assets/cc0c4272-ddae-4f28-ac27-1696889c817f)
+
+Kernel starts init and init runs busybox
+
+![ㅣ2](https://github.com/user-attachments/assets/b8002dca-f814-4139-8b19-9a972c2e22fd)
+
+refer to /etc/initab in busybox
+
+![ㅣ3](https://github.com/user-attachments/assets/b303741b-0be4-40fa-885f-32bba2148dfb)
+
+[FUN_004436f0]
+/etc/initab called etc/init.d/rcS
+
+![ㅣ4](https://github.com/user-attachments/assets/3d64d6d5-2416-4257-841c-ff504769c62e)
+
+/etc/init.d/rcS calls init.sh (gwall)
 
 ![123123](https://github.com/user-attachments/assets/1d0b2ad1-45cb-43e0-bb57-0ebbecff49a6)
 
