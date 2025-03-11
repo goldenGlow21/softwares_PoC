@@ -4,17 +4,20 @@
 
 **Contributor :** Lee Jong Hoon, Yang In Gyu, Jeong Yun Ho, Park Seong Ho, Lim Chan Su
 
-**Date** : 
+**Date** : 2025.2.23
 
-**Testing Environment** : 
+**Testing Environment** : Ubuntu 22.04 LTS / Kali Linux 2024.4 amd64 / FirmAE
 
 ## Vulnerability Info
 
 ### Firmware Version
+TOTOLINK A3002R V4
+TOTOLINK-A3002R-Ge-V4.0.0-B20230531.1404.web
 
 ### Vulnerability Type
-
+Telnet & Hardcoding Vulnerability
 ### 1-Line Description
+Using a hard-coded shadow.sample file, connect to Telnet running on the system
 
 ---
 
