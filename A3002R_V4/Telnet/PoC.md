@@ -31,10 +31,10 @@
 ## Vulnerability Verification
 
 (취약점 exploit 내용)
-![ㅋ2](https://github.com/user-attachments/assets/cfc807a4-b302-46de-a7e1-82aaa49a950a)
+
 
 ---
 
 ## Result
 
-(exploit 성공한 화면)
+![ㅋ2](https://github.com/user-attachments/assets/cfc807a4-b302-46de-a7e1-82aaa49a950a)
