@@ -20,6 +20,7 @@
 
 ## Vulnerability Acquirement
 
+### Shell Analysis
 <img width="695" alt="image" src="https://github.com/user-attachments/assets/8049780a-dfe4-49ec-a674-185093a55760" />
 
 While operating the emulator for the firmware and analyzing server vulnerabilities, I found that the shadow, shadow.sample file was using the MD5 hash algorithm
@@ -36,6 +37,7 @@ Kernel starts init and init runs busybox
 
 refer to /etc/initab in busybox
 
+### Ghidra
 ![ㅣ3](https://github.com/user-attachments/assets/b303741b-0be4-40fa-885f-32bba2148dfb)
 
 /etc/initab called etc/init.d/rcS in the function FUN_004436f0
@@ -59,6 +61,7 @@ So I thought I should Telnet access through the information on the shadow or sha
 
 ## Vulnerability Verification
 
+### Try to Exploit
 ![telnet](https://github.com/user-attachments/assets/dca6f395-d7a0-4228-a586-d02b0f66ad6d)
 
 Copy all contents of the shadow.sample file
