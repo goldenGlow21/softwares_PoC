@@ -38,7 +38,7 @@ Kernel starts init and init runs busybox
 
 ![ㅣ2](https://github.com/user-attachments/assets/b8002dca-f814-4139-8b19-9a972c2e22fd)
 
-refer to /etc/initab in busybox
+refer to /etc/inittab in busybox
 
 ### Ghidra
 ![ㅣ3](https://github.com/user-attachments/assets/b303741b-0be4-40fa-885f-32bba2148dfb)
