@@ -64,9 +64,29 @@ Injecting an excessive number of `"a"` characters into the `hostname` parameter 
 
 As a result, the web interface becomes inaccessible.
 
+---
 
 ## Video
 
-https://github.com/user-attachments/assets/994b56d0-48d0-4012-abcc-376f2b86998c
+According to Swind1er, the actual device has ASLR disabled.
+https://gist.github.com/Swind1er/ee095fbfe13f77a5b45b39a5aa82bd17
 
-The video's `python3 ex.py` should be changed to `python3 formDelDevicePoC.py`.
+ASLR is disabled by default in the real environment, so use the following command to disable ASLR in the simulation environment:
+
+```
+echo 0 > /proc/sys/kernel/randomize_va_space
+```
+
+https://github.com/user-attachments/assets/54184122-9a22-4b7a-a2db-23a945f2d4b6
+
+In the firmAE emulator
+```
+cd /var/boa
+boa &
+```
+
+In the Ubuntu
+```
+# 'formMapDelDevice_ex.py' and 'busybox-mipsel' file must be in the same location.
+python3 formMapDelDevice_ex.py
+```
