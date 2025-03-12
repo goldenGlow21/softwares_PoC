@@ -71,3 +71,22 @@ After that, we could confirm the command injection by inspecting the file we hav
 <img width="713" alt="image" src="https://github.com/user-attachments/assets/858436e6-e664-4410-95ec-d9a15c51ec36" />
 
 We also confirmed that “rm” command also works the same.
+
+---
+## Video
+
+https://github.com/user-attachments/assets/223c8a92-4ee0-47e2-9a58-033b981f328d
+
+In the firmAE emulator
+```
+cd /var/boa
+boa &
+```
+
+In the Ubuntu
+```
+# 'formMapDelDevice_ex(ci).py' and 'busybox-mipsel' file must be in the same location.
+python3 formMapDelDevice_ex(ci).py
+```
+
+
