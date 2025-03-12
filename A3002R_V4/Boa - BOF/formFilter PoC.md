@@ -29,7 +29,7 @@
 
 ![11](https://github.com/user-attachments/assets/fcb5ae1a-23e7-4950-8673-761fc0fa1eca)
 
-A buffer overflow vulnerability exists in the 0x416ddc function of the TOTOLINK A3002R-Ge V4.0.0-B20230531.1404 firmware. The param_1 variable receives input from the URL parameter in a POST request. However, there is no length validation in the strcpy function handling this input, leading to a potential buffer overflow vulnerability.
+A buffer overflow vulnerability exists in the `0x416ddc` function of the `TOTOLINK A3002R-Ge V4.0.0-B20230531.1404` firmware. The `param_1` variable receives input from the `URL` parameter in a POST request. However, there is no length validation in the strcpy function handling this input, leading to a potential buffer overflow vulnerability.
 
 
 ---
@@ -42,7 +42,7 @@ The URL parameter in the following address is where the user input is processed.
 
 ![13](https://github.com/user-attachments/assets/3c5b1401-1298-4604-bca5-3ca422016711)
 
-Observing that the url parameter contains the value "test".
+Observing that the url parameter contains the value `"test"`.
 
 
 ---
@@ -51,7 +51,7 @@ Observing that the url parameter contains the value "test".
 
 ![14](https://github.com/user-attachments/assets/530e0d84-d80f-4898-ad87-cd45a79d5f84)
 
-Injecting a large number of "a" characters into the url parameter.
+Injecting a large number of `"a"` characters into the url parameter.
 
 ![15](https://github.com/user-attachments/assets/51800dc8-eccb-4f4f-bd9a-5c91066b406c)
 
