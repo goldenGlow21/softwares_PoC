@@ -44,7 +44,7 @@ Check other htm pages to see if they also use the eval() function
 ### 
 <img width="792" alt="image" src="https://github.com/user-attachments/assets/8b90d832-4e34-4976-9992-2f9bbe331839" />
 
-
+I first tried using alert("XSS") to see if the eval() function works properly
 
 ---
 
