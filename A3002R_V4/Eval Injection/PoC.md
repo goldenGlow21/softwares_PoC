@@ -57,7 +57,7 @@ When confirmed with the developer tool, it was confirmed that the value was trea
 
 <img width="764" alt="image" src="https://github.com/user-attachments/assets/49979621-7b94-42be-aec0-b0a3fc69369a" />
 
-refer to attack to get a value from the sessioncheck field
+Attempting to get a value from the sessioncheck field
 
 ---
 
