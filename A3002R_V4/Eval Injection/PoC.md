@@ -18,6 +18,7 @@ TOTOLINK-A3002R-Ge-V4.0.0-B20230531.1404.web
 Eval Injection
 
 ### 1-Line Description
+Checked the use of the eval() function on several pages and exploited the vulnerability to get sessionid
 
 ---
 
@@ -25,7 +26,7 @@ Eval Injection
 
 ### Shell Analysis
 <img width="715" alt="image" src="https://github.com/user-attachments/assets/a266d47c-a948-46b9-9239-f058d7369ad9" />
-
+Identify the use of the eval() function during static analysis by connecting to the shell
 
 
 <img width="671" alt="image" src="https://github.com/user-attachments/assets/c3595f4f-14b5-494c-aebb-722d9028273e" />
