@@ -30,12 +30,12 @@
 ![image](https://github.com/user-attachments/assets/61635f2a-2ef1-402f-8601-b2ba2a639f1d)
 
 
-While inspecting the script, we confirmed that the string stored through v15 is getting executed by system() function. Especially, the script gets input value from user by “echo %s”, and make it as a4. 
+While inspecting the script, we confirmed that the string stored through acStack_218 is getting executed by system() function. Especially, the script gets input value from user by “echo %s”, and make it as param4. 
 
 ![image](https://github.com/user-attachments/assets/44d1e344-6260-41d7-862e-d6c9e8d3f894)
 
 
-If a4 field is empty, the script allocates “off_48A060”’s value to a4. This eventually blocks command injection, so we got to set the value ourself on Burp Suite.
+If param4 field is empty, the script allocates “PTR_s_TOTOLINK-A3002R-Ge-V4.0.0-B20230_0048a060”’s value to param4. This eventually blocks command injection, so we got to set the value ourself on Burp Suite.
 
 ![image](https://github.com/user-attachments/assets/f7eedb21-d539-49c6-bf43-3a261ec1bb49)
 
