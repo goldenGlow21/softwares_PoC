@@ -43,17 +43,17 @@ refer to /etc/initab in busybox
 ### Ghidra
 ![ㅣ3](https://github.com/user-attachments/assets/b303741b-0be4-40fa-885f-32bba2148dfb)
 
-/etc/initab called etc/init.d/rcS in the function FUN_004436f0
+/etc/inittab called etc/init.d/rcS in the function FUN_004436f0
 
 ![1541](https://github.com/user-attachments/assets/ad8939b2-3d49-4cc3-bc14-667be1c596d8)
 
-/etc/init.d/rcS calls init.sh (gw all) and porform sysconf
+/etc/init.d/rcS calls init.sh (gw all)
 <br>
 gw all: gateway all
 
 ![123123](https://github.com/user-attachments/assets/1d0b2ad1-45cb-43e0-bb57-0ebbecff49a6)
 
-Run telnet by the telnetd & >/dev/null 2>&1 in sysconf
+Perform sysconf on init.sh and i have further investigated into FUN_00404d98
 
 ![1231234](https://github.com/user-attachments/assets/a270e58b-1d68-406f-8e71-cfd238bc6694)
 
