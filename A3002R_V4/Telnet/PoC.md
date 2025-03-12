@@ -57,7 +57,7 @@ Perform sysconf on init.sh and i have further investigated into FUN_00404d98
 
 ![1231234](https://github.com/user-attachments/assets/a270e58b-1d68-406f-8e71-cfd238bc6694)
 
-I identified telnetd, the damon of telnet, in the function FUN_00404d98.
+I identified telnetd, the daemon of telnet, in the function FUN_00404d98.
 So I thought I should try Telnet access through the information on the shadow or shadow.sample.
 
 ---
@@ -67,7 +67,7 @@ So I thought I should try Telnet access through the information on the shadow or
 ### Try to Exploit
 ![telnet](https://github.com/user-attachments/assets/dca6f395-d7a0-4228-a586-d02b0f66ad6d)
 
-Check the show.sample file
+Check the shadow.sample file
 
 ![ㅋ1](https://github.com/user-attachments/assets/aadbf590-93b4-41ce-a654-d345b82b4876)
 
@@ -75,7 +75,7 @@ Put all the copied values in the hash.txt file and attempt to crack using the Jo
 
 ![tel](https://github.com/user-attachments/assets/1babdd14-d435-42e4-b639-63df27eb83cb)
 
-As previously analyzed, we identified that Telnet is operating and therefore performed a port scan using the Nmap tool, and confirmed that it is also using Telnet Port 23
+As previously analyzed, we identified that Telnet is operating and therefore we performed a port scan using the Nmap tool, and confirmed that it is also using Telnet Port 23
 
 ---
 
