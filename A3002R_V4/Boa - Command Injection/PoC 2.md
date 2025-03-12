@@ -72,3 +72,20 @@ Changing the “url” and “post” parameters as we are sending on EasyMesh, 
 <img width="671" alt="image" src="https://github.com/user-attachments/assets/ad7491bd-39ce-41d5-a1f1-ed53ca49bdcc" />
 
 We hereby confirmed /tmp/hacked file’s generation, which indicates seccess of Command Injection attack.
+
+---
+## Video
+
+https://github.com/user-attachments/assets/446bd6d2-3b65-41f0-ad1c-29fb64f96bc2
+
+In the firmAE emulator
+```
+cd /var/boa
+boa &
+```
+
+In the Ubuntu
+```
+# 'formMapDel_ex.py' and 'busybox-mipsel' file must be in the same location.
+python3 formMapDel.py
+```
