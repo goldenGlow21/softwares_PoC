@@ -57,7 +57,7 @@ Perform sysconf on init.sh and i have further investigated into FUN_00404d98
 
 ![1231234](https://github.com/user-attachments/assets/a270e58b-1d68-406f-8e71-cfd238bc6694)
 
-I identified telnetd, the demon of telnet, in the function FUN_00404d98.
+I identified telnetd, the damon of telnet, in the function FUN_00404d98.
 So I thought I should try Telnet access through the information on the shadow or shadow.sample.
 
 ---
