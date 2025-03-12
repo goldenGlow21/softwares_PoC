@@ -64,6 +64,27 @@ Upon checking the stack with gdb-multiarch, it was confirmed that the buffer ove
 
 ## Video
 
-https://github.com/user-attachments/assets/ca256038-f7fe-4710-99f1-c1d50c71b739
+According to Swind1er, the actual device has ASLR disabled.
+https://gist.github.com/Swind1er/ee095fbfe13f77a5b45b39a5aa82bd17
 
-The video's `python3 ex.py` should be changed to `python3 formPortFwPoC.py`.
+ASLR is disabled by default in the real environment, so use the following command to disable ASLR in the simulation environment:
+
+```
+echo 0 > /proc/sys/kernel/randomize_va_space
+```
+
+https://github.com/user-attachments/assets/644acf4b-3bfd-4fd2-a159-d41bd5302cc3
+
+In the firmAE emulator
+```
+cd /var/boa
+boa &
+```
+
+In the Ubuntu
+```
+# 'formPortFw_ex.py' and 'busybox-mipsel' file must be in the same location.
+python3 formPortFw_ex.py
+```
+
+
