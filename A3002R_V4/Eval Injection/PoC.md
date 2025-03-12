@@ -26,21 +26,23 @@ Checked the use of the eval() function on several pages and exploited the vulner
 
 ### Shell Analysis
 <img width="715" alt="image" src="https://github.com/user-attachments/assets/a266d47c-a948-46b9-9239-f058d7369ad9" />
-Identify the use of the eval() function during static analysis by connecting to the shell
 
+Identify the use of the eval() function during static analysis by connecting to the shell
 
 <img width="671" alt="image" src="https://github.com/user-attachments/assets/c3595f4f-14b5-494c-aebb-722d9028273e" />
 
-
+top.location.href → This means that you get all the top URLs of your current browser
+<br>
+.split(”#”) → "#" divide it on the basis of
+<br>
+[1] → It's literally an array index
 
 <img width="813" alt="image" src="https://github.com/user-attachments/assets/d7dede8a-4003-4f12-a2d6-d268c3220725" />
 
+Check other htm pages to see if they also use the eval() function
 
 ### 
 <img width="792" alt="image" src="https://github.com/user-attachments/assets/8b90d832-4e34-4976-9992-2f9bbe331839" />
-
-
-
 
 
 
