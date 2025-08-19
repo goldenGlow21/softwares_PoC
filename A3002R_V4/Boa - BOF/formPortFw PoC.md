@@ -6,7 +6,7 @@
 
 **Contributor :** Lee Jong Hoon, Yang In Gyu, Jeong Yun Ho, Park Seong Ho, Lim Chan Su
 
-**Vuln. Identificated** : 2025.03.03
+**Vuln. Identified** : 2025.03.03
 **CVE Designated** : 2025.8.18
 
 **Testing Environment** : Ubuntu 22.04 LTS / FirmAE
