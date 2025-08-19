@@ -1,10 +1,13 @@
 # Proof of Concept for: **Totolink A3002R V4_Firmware V4.0.0-B20230531.1404**
 
+> https://www.cve.org/CVERecord?id=CVE-2025-55585
+
 ---
 
 **Contributor :** Lee Jong Hoon, Yang In Gyu, Jeong Yun Ho, Park Seong Ho, Lim Chan Su
 
-**Date** : 25.02.26
+**Vuln. Identificated** : 2025.02.26
+**CVE Designated** : 2025.8.18
 
 **Testing Environment** : Ubuntu 22.04 LTS / Kali Linux 2024.4 amd64 / FirmAE
 
